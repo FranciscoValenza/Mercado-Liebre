@@ -27,6 +27,12 @@ app.get('*', (req, res) => {
     res.send('ruta restringida ****')
 })
 
+/*
+app.listen(3100, function() {
+    console.log("Levantando un servidor con Express")
+})
+*/
+
 app.listen(prooces.env.PORT || 3100, function() {
     console.log("Levantando un servidor con Express")
 })
