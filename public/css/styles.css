@@ -1,0 +1,424 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    background-color: #EAC926;
+    padding:20px
+}
+
+main {
+    text-align: center;
+    background-color: gainsboro;
+}
+
+footer {
+    background-color: white;
+    color: gray;
+    text-align: center;
+    width: 100vw;
+    line-height: 2vh;
+}
+
+#buscar {
+    display: flex;
+    position: relative;
+    right: 3px;
+}
+
+#logo {
+    display: flex;
+}
+
+.contenedor2 {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor2 button {
+    border: none;
+    background-color: white;
+    padding: 2vh;
+    border-top: 1px solid lightslategray;
+    border-right: 1px solid lightslategray;
+    border-bottom: 1px solid lightslategray;
+}
+
+.contenedorImg img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.hipervinculos ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hipervinculos a{
+    text-decoration: none;
+    display: inline-block;
+    color: #222222;
+    display: flex;
+    padding: 17px 0;
+    font-size: 11px;
+}
+
+.hipervinculos1{
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.hipervinculos2{
+    display: flex;
+}
+
+#banner {
+    width: 100%;
+    height: 15vh;
+}
+
+#cuotas {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+.texto {
+    font-size: 12px;
+    margin: 2px
+}
+
+.titulares {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(111, 109, 109);
+    margin-top: 30px;
+}
+
+.precios {
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex-grow: 0.30;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: #39b54a;
+    text-align: center;
+    display: flex;
+    flex-grow: 0.70;
+}
+
+.descripciones {
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    color: darkgray;
+    opacity: 0;
+}
+
+.descripciones:hover{
+    opacity: 100;
+}
+
+.hamburguesa {
+    border: solid 10px #105cad;
+    background-color: #105cad;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 20%;
+    color: white;
+    display: block;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    max-width: 30px;
+}
+
+.iconos {
+ font-size: 2em;
+    margin-bottom: 10px;
+    color: #03264C;
+}
+
+.iconos2 {
+    color: #39b54a;
+    border: solid 1px #39b54a;
+    border-radius: 100%;
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+    right: 5%;
+    top: -12px;
+}
+
+.iconos3{
+   margin-top: 3px;
+}
+
+.articulo {
+    padding: 15px;
+    border: solid 10px #ebebeb;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    background-color: white;
+}
+
+.c1:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   }
+
+.caja2 {
+    border-top: solid 1px #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+.contenedor1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#input{
+    height: 5vh;
+}
+
+
+
+
+@media(max-width:520px) {
+    .descripciones {
+        display: none;
+    }
+
+    .hipervinculos {
+        display: none;
+    }
+
+    .articulo2{
+        display: none;
+    }
+
+    .articulo3{
+        display: none;
+    }
+
+    .articulo4{
+        display: none;
+    }
+
+    .ofertas{
+        display: none;
+    } 
+
+    .hipervinculos a{
+        font-size: 8px;
+    }
+}
+
+
+@media(min-width: 521px) {
+    .articulo {
+        border: solid 10px #ebebeb;
+        padding: 15px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .caja2 {
+        border-top: solid 1px #ebebeb;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .iconos2 {
+        color: #39b54a;
+        border: solid 1px #39b54a;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: white;
+    }
+
+    .iconos2:hover{
+        transform: rotate(-360deg);
+        transition: 5s;
+    }
+
+    .precios {
+        font-size: 18px;
+        text-align: center;
+        display: flex;
+        flex-grow: 0.30;
+    }
+
+    .descuentos {
+        font-size: 16px;
+        color: #39b54a;
+        text-align: center;
+        display: flex;
+        flex-grow: 0.70;
+    }
+
+    .articulo1234{
+    display: flex;
+    justify-content: space-around;
+    }
+
+    .articulo3{
+        display: none;
+    }
+
+    .articulo4{
+        display: none;
+    }
+    
+    .hipervinculos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px; 
+    }
+
+    #cuotas{
+        max-width: 300px;
+        text-align: right;
+        font-size: 15px;
+    }
+
+    .hamburguesa {
+        display: none;
+    }
+
+    .hipervinculos ul{
+        display: flex;
+    }
+
+    .hipervinculos li{
+        margin: 0 5px;
+    }
+
+    .ofertas{
+        display: none;
+    }
+}
+
+
+@media(min-width: 745px) {
+    .contenedor1, .hipervinculos, .contenedor2 {
+       max-width: 1200px; 
+        margin: auto;
+    }
+
+    .hipervinculos li{
+        margin: 0 10px;
+    }
+
+    .hipervinculos a{
+        font-size: 15px;
+    }
+
+    #cuotas{
+        max-width: none;
+    }
+    
+    
+    .contenedor2{
+        flex-grow: 4;
+        justify-content: center;
+    }
+    .contenedor2 input{
+        width: 80%;
+    }
+
+    #cuotas{
+        flex-grow: 1;
+    }
+
+    .contenedorImg{
+        flex-grow: 1;
+    }
+ 
+    .hipervinculos{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .hipervinculos1{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .hipervinculos2{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    } 
+
+    .articulo1{
+        display: inline-block;
+    }
+
+    .articulo2{
+        display: inline-block;
+    }
+
+    .articulo3{
+        display:inline-block
+    }
+
+    .articulo4{
+        display: inline-block;
+    }
+
+    .ofertas{
+        display: block;
+    }
+
+    .articulo1234{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ofertas{
+        display: none;
+    }
+
+    #banner{
+        height: 20vh;
+    }
+
+    .contenedor-footer{
+        height: 30vh;
+        display: flex;
+    }
+
+    .contenedor2-footer{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 50px;
+    }
+
+}
+
+
+

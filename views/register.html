@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/register.css" rel="stylesheet">
+    <title>FORMULARIO REGISTRO</title>
+</head>
+<body>
+
+    <img id="logo" width='400' height='160' src="/img/logo-mercado-liebre.svg"></img>
+  
+    <div class="contenedor-total">
+    <form action="/views/home.html" method="POST">
+<p>
+    <label for="nombre"></label><input placeholder="Nombre y Apellido" type="text" id="nombre" name="nombre" required>
+</p>
+<p>
+    <label for="email"></label><input placeholder="E-mail" type="email" name="email" required>
+</p>
+<p class="fecha-nacimiento">
+    <label for="fecha" class="fecha-label">Fecha de Nacimiento</label><input class="fecha-nacimiento-input" type="date" name="fecha" required>
+</p>
+<p>
+    <label for="domicilio"></label><input placeholder="Domicilio" type="text" id="domicilio" name="domicilio" required>
+</p>
+<p>
+    <label for="perfil">Perfil del usuario</label>
+    <div class="perfil-usuario">
+    <label><input type="radio" name="perfil" value="vendedor">Vendedor</label>
+    <label><input type="radio" name="perfil" value="comprador">Comprador</label>
+</div>
+</p>
+<p class="intereses">
+    <label for="interes">Intereses</label>
+    <label><input type="checkbox" name="interes" value="Electro">Electro</label>
+    <label><input type="checkbox" name="interes" value="Moda">Moda</label>
+    <label><input type="checkbox" name="interes" value="Hogar">Hogar</label>
+    <label><input type="checkbox" name="interes" value="Jugueteria">Juguetería</label>
+    <label><input type="checkbox" name="interes" value="Vida sana">Vida sana</label>
+
+</p>
+<p>
+    <label for="foto">Foto de usuario</label>
+    <input type="file" name="fotoDePerfil" id="foto" accept=".jpg, .png">
+
+</p>
+<p>
+    <label for="password"></label> <input placeholder="Contraseña" type="password" name="password" required>
+</p>
+<p>
+    <label for="confirmar contraseña"></label> <input placeholder="Confirmar contraseña" type="password" name=" confrmar contraseña" required>
+</p>
+<p>
+    <button type="submit">ENVIAR</button>
+</p>
+<p>
+    <button type="reset">BORRAR</button>
+</p>
+
+</form>
+</div>
+</body>
+</html>
