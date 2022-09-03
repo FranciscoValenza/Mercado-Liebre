@@ -33,6 +33,6 @@ app.listen(3100, function() {
 })
 */
 
-app.listen(prooces.env.PORT || 3100, function() {
+app.listen(prooces.env.PORT || 3000, function() {
     console.log("Levantando un servidor con Express")
 })
