@@ -28,7 +28,7 @@ footer {
     display: flex;
     position: relative;
     right: 3px;
-    padding: 17px
+    padding: 15.5px
 }
 
 #logo {
@@ -48,7 +48,9 @@ footer {
     border: none;
     background-color: white;
     padding: 2vh;
-    
+    border-top: 1px solid lightslategray;
+    border-right: 1px solid lightslategray;
+    border-bottom: 1px solid lightslategray;
     cursor:pointer;
 }
 
@@ -485,7 +487,7 @@ footer {
     }
 
     #banner{
-        height: 20vh;
+        height: 27vh;
     }
 
     .contenedor-footer{
