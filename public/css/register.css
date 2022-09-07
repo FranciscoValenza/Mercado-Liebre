@@ -1,6 +1,183 @@
+
+/*header*/
+
+.main-header {
+    background-color: #EAC926;
+    padding:20px
+}
+
+#buscar {
+    display: flex;
+    position: relative;
+    right: 3px;
+}
+
+#logo {
+    display: flex;
+}
+
+.contenedor2 {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor2 button {
+    border: none;
+    background-color: white;
+    padding: 2vh;
+    border-top: 1px solid lightslategray;
+    border-right: 1px solid lightslategray;
+    border-bottom: 1px solid lightslategray;
+    cursor:pointer;
+}
+
+.contenedor2 button:hover{
+    background-color: #105cad;
+}
+
+.contenedorImg img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.hipervinculos ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hipervinculos a{
+    text-decoration: none;
+    display: inline-block;
+    color: #222222;
+    display: flex;
+    padding: 17px 0;
+    font-size: 11px;
+    
+}
+
+.hipervinculos1{
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.hipervinculos2{
+    display: flex;
+}
+
+#cuotas {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+.iconos3{
+    margin-top: 3px;
+ }
+
+ #input{
+    height: 5vh;
+}
+
+.contenedor1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*.hamburguesa {
+    border: solid 10px #105cad;
+    background-color: #105cad;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 20%;
+    color: white;
+    display: block;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    max-width: 30px;
+}*/
+
+/*hamburguesa desplegable*/
+
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+#hamnav {
+    width: 100%;
+    background: #000;
+  }
+  
+  /* (B) HORIZONTAL MENU ITEMS */
+  #hamitems { display: flex; }
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover { color: blue; }
+  
+  /* (C) HIDE HAMBURGER */
+  #hamnav label, #hamburger { display: none; }
+
+
+
+  /* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
+ 
+  /* (B) SHOW HAMBURGER ICON */
+  #hamnav label { 
+    display: inline-block; 
+    color: white;
+    background: #105cad;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 15%;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+}
+
+#hamnav {
+    position: sticky;
+    top: 0;
+    width:100%;
+    background-color: #EAC926;
+    text-align: center;
+  }
+
+
+/**/
+
+
+.hipervinculos{
+    border-bottom: solid 0.5px black;
+}
+
+
+/*main*/
+
 .fecha-nacimiento{
     display: flex;
     flex-direction: column;
+    font-weight: bold;
 }
 
 .fecha-nacimiento-input{
@@ -13,30 +190,158 @@
 
 .perfil-usuario{
     display: flex;
+    gap:10px;
 }
 
 .intereses{
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    
+}
+
+.titulo-intereses{
+    font-weight: bold;
+}
+
+.titulo-perfil{
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    justify-content: center;
 }
 
 .contenedor-total{
     background-color: gainsboro;
     padding: 15px;
-    max-width: 50%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 180px;
-    left: 700px;
+    max-width: 600px;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     border: solid 10px #ebebeb;
+    margin-bottom: 120px;
+    
+}
+
+.inputs{
+    width: 70%;
+}
+
+.botones{
+    display: flex;
+    gap:50px;
+}
+
+.boton-final{
+    background-color: #105cad;
+    color: #ebebeb;
+    border-radius: 10%;
 }
 
 body{
     background-color: #EAC926;
 }
 
-#logo{
- margin-left: 30px;
+@media(max-width:350px){
+    .contenedor-total{
+        width:80% ;
+    }
+}
+
+@media(max-width:520px) {
+
+    .hipervinculos {
+        display: none;
+    }
+
+    .hipervinculos a{
+        font-size: 8px;
+    }
+}
+
+
+@media(min-width: 521px){
+    .hipervinculos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px; 
+    }
+
+    #cuotas{
+        max-width: 300px;
+        text-align: right;
+        font-size: 15px;
+    }
+
+    /*.hamburguesa {
+        display: none;
+    }*/
+
+    .hipervinculos ul{
+        display: flex;
+    }
+
+    .hipervinculos li{
+        margin: 0 5px;
+    }
+
+    #hamnav{
+        display: none;
+    }
+}
+
+
+@media(min-width: 745px) {
+
+.contenedor2{
+    flex-grow: 4;
+    justify-content: center;
+}
+.contenedor2 input{
+    width: 80%;
+}
+
+.contenedor1, .hipervinculos, .contenedor2 {
+    max-width: 1200px; 
+     margin: auto;
+ }
+
+ .hipervinculos li{
+     margin: 0 10px;
+ }
+
+ .hipervinculos a{
+     font-size: 15px;
+ }
+
+ #cuotas{
+     max-width: none;
+ }
+ 
+ 
+ .contenedor2{
+     flex-grow: 4;
+     justify-content: center;
+ }
+ .contenedor2 input{
+     width: 80%;
+ }
+
+ #cuotas{
+     flex-grow: 1;
+ }
+
+ .contenedorImg{
+     flex-grow: 1;
+ }
+
+ .hipervinculos{
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     margin-bottom: 20px;
+ }
+
 }

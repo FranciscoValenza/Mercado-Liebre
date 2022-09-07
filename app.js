@@ -11,15 +11,15 @@ app.get('/', (req, res) => {
     res.send('ahora si entre')
 })
 
-app.get('/mostrar_sitio', (req, res) => {
+app.get('/home', (req, res) => {
     res.sendFile((__dirname + '/views/home.html'))
 })
 
-app.get('/register.html', (req,res) => {
+app.get('/register', (req,res) => {
     res.sendFile(path.resolve(__dirname + '/views/register.html'));
 });
 
-app.get('/login.html', (req,res) => {
+app.get('/login', (req,res) => {
     res.sendFile(path.resolve(__dirname + '/views/login.html'));
 });
 

@@ -61,6 +61,11 @@ height: 30px;
     border-top: 1px solid lightslategray;
     border-right: 1px solid lightslategray;
     border-bottom: 1px solid lightslategray;
+    cursor:pointer;
+}
+
+.contenedor2 button:hover{
+    background-color: #105cad;
 }
 
 .contenedorImg img {
@@ -116,7 +121,7 @@ height: 30px;
     align-items: center;
 }
 
-.hamburguesa {
+/*.hamburguesa {
     border: solid 10px #105cad;
     background-color: #105cad;
     border-top-left-radius: 20%;
@@ -129,7 +134,69 @@ height: 30px;
     font-size: 30px;
     text-align: center;
     max-width: 30px;
+}*/
+
+/*hamburguesa desplegable*/
+
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+#hamnav {
+    width: 100%;
+    background: #000;
+  }
+  
+  /* (B) HORIZONTAL MENU ITEMS */
+  #hamitems { display: flex; }
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover { color: blue; }
+  
+  /* (C) HIDE HAMBURGER */
+  #hamnav label, #hamburger { display: none; }
+
+
+
+  /* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
+ 
+  /* (B) SHOW HAMBURGER ICON */
+  #hamnav label { 
+    display: inline-block; 
+    color: white;
+    background: #105cad;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 15%;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
 }
+
+#hamnav {
+    position: sticky;
+    top: 0;
+    width:100%;
+    background-color: #EAC926;
+    text-align: center;
+  }
+
+
+/**/
 
 
 
@@ -149,9 +216,18 @@ height: 30px;
     line-height: 2vh;
 }
 
+.contenedor-footer{
+    gap: 20px;
+    padding: 20px;
+}
+
 .texto {
     font-size: 12px;
     margin: 2px
+}
+
+.iconos:hover{
+    color: #EAC926;
 }
 
 /* body*/
@@ -162,6 +238,10 @@ body {
     line-height: 24px;
     display: flex;
     flex-direction: column;
+}
+
+.contenedor-footer{
+    gap: 20px;
 }
 
 
@@ -192,9 +272,9 @@ body {
         font-size: 15px;
     }
 
-    .hamburguesa {
+    /*.hamburguesa {
         display: none;
-    }
+    }*/
 
     .hipervinculos ul{
         display: flex;
@@ -202,6 +282,10 @@ body {
 
     .hipervinculos li{
         margin: 0 5px;
+    }
+
+    #hamnav{
+        display: none;
     }
 }
 
