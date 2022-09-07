@@ -106,6 +106,7 @@ footer {
     font-weight: bold;
     color: rgb(111, 109, 109);
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .precios {
@@ -133,6 +134,10 @@ footer {
 
 .descripciones:hover{
     opacity: 100;
+}
+
+.articulo1234{
+    margin-bottom: 30px;
 }
 
 /*
@@ -361,17 +366,8 @@ footer {
     .articulo1234{
     display: flex;
     justify-content: space-around;
- 
-
     }
 
-    .articulo3{
-        display: none;
-    }
-
-    .articulo4{
-        display: none;
-    }
     
     .hipervinculos{
         display: flex;
@@ -492,7 +488,7 @@ footer {
     }
 
     .contenedor-footer{
-        height: 30vh;
+        line-height: 2;
         display: flex;
     }
 
@@ -510,14 +506,14 @@ footer {
 
 
 @media(max-width:1425px){
-    .articulo2, .articulo4{
-        display: none;
-    }
+   
 
     .articulo1234{
-        justify-content: center;
+      flex-wrap: wrap;
         align-items: center;   
     }
+
+    .c1{margin-bottom:20px;}
 }
 
 
