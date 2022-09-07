@@ -24,15 +24,15 @@ footer {
     line-height: 2vh;
 }
 
+#logo {
+    display: flex;
+}
+
 #buscar {
     display: flex;
     position: relative;
     right: 3px;
     padding: 15.5px
-}
-
-#logo {
-    display: flex;
 }
 
 #input{
