@@ -10,6 +10,7 @@
     display: flex;
     position: relative;
     right: 3px;
+    padding: 15.5px
 }
 
 #logo {
@@ -75,10 +76,11 @@
 
 .iconos3{
     margin-top: 3px;
+    margin-left: 3px;
  }
 
  #input{
-    height: 5vh;
+    height: 40px;
 }
 
 .contenedor1 {
@@ -344,4 +346,10 @@ body{
      margin-bottom: 20px;
  }
 
+}
+
+@media(max-width:448px){
+    #buscar{
+        padding: 15.4px;
+    }
 }

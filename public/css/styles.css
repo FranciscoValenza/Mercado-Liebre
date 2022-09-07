@@ -28,10 +28,15 @@ footer {
     display: flex;
     position: relative;
     right: 3px;
+    padding: 15.5px
 }
 
 #logo {
     display: flex;
+}
+
+#input{
+    height: 40px;
 }
 
 .contenedor2 {
@@ -243,6 +248,7 @@ footer {
 
 .iconos3{
    margin-top: 3px;
+   margin-left: 3px;
 }
 
 .articulo {
@@ -273,9 +279,6 @@ footer {
     align-items: center;
 }
 
-#input{
-    height: 5vh;
-}
 
 .contenedor-footer{
     gap: 20px;
@@ -516,5 +519,9 @@ footer {
     .c1{margin-bottom:20px;}
 }
 
-
+@media(max-width:448px){
+    #buscar{
+        padding: 15.4px;
+    }
+}
 
