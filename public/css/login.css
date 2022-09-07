@@ -342,9 +342,9 @@ body {
  }
 
  .contenedor-footer{
-    height: 30vh;
-    display: flex;
-}
+        line-height: 2;
+        display: flex;
+    }
 
 .contenedor2-footer{
     display: flex;
