@@ -398,9 +398,7 @@ footer {
         margin: 0 5px;
     }
 
-    .ofertas{
-        display: none;
-    }
+
 
     #hamnav{
         display: none;
@@ -482,9 +480,7 @@ footer {
         display: block;
     }
 
-    .ofertas{
-        display: none;
-    }
+
 
     #banner{
         height: 27vh;
