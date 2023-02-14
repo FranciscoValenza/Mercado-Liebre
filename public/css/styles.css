@@ -208,6 +208,10 @@ footer {
     border-radius: 15%;
   }
 
+  #hamnav label:hover{
+cursor: pointer;
+  }
+
   /* (C) TOGGLE SHOW/HIDE MENU */
   #hamitems { display: none; }
   #hamnav input:checked ~ #hamitems { display: block; }
